@@ -1,0 +1,6 @@
+SELECT 
+    WEEK_NUMBER,
+    OS_NAME,
+    COUNT(DISTINCT MSISDN) AS total_customers_weekly
+FROM combined_data
+GROUP BY WEEK_NUMBER, OS_NAME

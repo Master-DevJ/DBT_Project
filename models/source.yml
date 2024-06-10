@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: my_source
+    database: TELECOM_DB
+    schema: TELECOM_SCHEMA
+    tables:
+      - name: crm_data
+      - name: device_data
+      - name: revenue_data
+      - name: crm_data_unclean

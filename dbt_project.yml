@@ -1,0 +1,18 @@
+name: 'my_dbt_project'
+version: '1.0'
+config-version: 2
+
+profile: 'my_dbt_project'
+
+model-paths: ["models"]
+# Define the test paths
+test-paths: ["tests"]
+# Define the seed paths
+seed-paths: ["seeds"]
+# Define the macro paths
+macro-paths: ["macros"]
+
+models:
+  my_dbt_project:
+    materialized: view
+    # +schema: TELECOM_SCHEMA  # The schema where DBT will create views/tables

@@ -1,0 +1,20 @@
+my_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      account: yx83733.ap-south-1.aws
+      database: telecom_db
+      password: Password@123
+      role: accountadmin
+      schema: telecom_schema
+      threads: 4
+      type: snowflake
+      user: MasterDJ
+      warehouse: compute_wh
+      client_session_keep_alive: False
+      send_anonymous_usage_stats: false
+
+
+
+
+
