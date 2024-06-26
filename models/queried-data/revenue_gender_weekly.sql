@@ -1,6 +1,6 @@
--- models/revenue_by_gender.sql
+-- models/revenue_gender_weekly.sql
 
--- Calculate total revenue by gender overall and week-wise
+-- Calculate total revenue by gender week-wise
 SELECT 
     WEEK_NUMBER,
     GENDER,

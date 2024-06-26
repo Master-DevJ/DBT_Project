@@ -16,3 +16,14 @@ models:
   dbt_project:
     materialized: view
     # +schema: TELECOM_SCHEMA  # The schema where DBT will create views/tables
+
+# dbt_project.yml
+
+seeds:
+  dbt_project:
+    expected_revenue_gender_weekly:
+      +column_types:
+        WEEK_NUMBER: int
+        GENDER: string
+        total_revenue_weekly: int
+
