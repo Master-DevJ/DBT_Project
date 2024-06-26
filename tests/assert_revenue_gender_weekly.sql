@@ -1,4 +1,4 @@
--- tests/assert_revenue_gender_weekly.sql
+-- tests/assert_revenue_gender_weekly
 
 WITH actual AS (
     SELECT 
