@@ -56,5 +56,5 @@ select
     c.MOBILE_TYPE,
     c.VALUE_SEGMENT
 from cleaned_revenue_data r
-left join cleaned_device_data d on r.MSISDN = d.MSISDN
-left join cleaned_crm_data c on r.MSISDN = c.MSISDN
+outer join cleaned_device_data d on r.MSISDN = d.MSISDN
+outer join cleaned_crm_data c on r.MSISDN = c.MSISDN

@@ -1,8 +1,8 @@
-name: 'my_dbt_project'
+name: 'dbt_project'
 version: '1.0'
 config-version: 2
 
-profile: 'my_dbt_project'
+profile: 'dbt_project'
 
 model-paths: ["models"]
 # Define the test paths
@@ -13,6 +13,17 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 
 models:
-  my_dbt_project:
+  dbt_project:
     materialized: view
     # +schema: TELECOM_SCHEMA  # The schema where DBT will create views/tables
+
+# dbt_project.yml
+
+# seeds:
+#   dbt_project:
+#     expected_revenue_gender_weekly:
+#       +column_types:
+#         WEEK_NUMBER: int
+#         GENDER: string
+#         total_revenue_weekly: int
+

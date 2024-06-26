@@ -1,4 +1,4 @@
-my_dbt_project:
+dbt_project:
   target: dev
   outputs:
     dev:
