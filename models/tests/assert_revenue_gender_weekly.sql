@@ -5,7 +5,7 @@ WITH actual AS (
         WEEK_NUMBER,
         GENDER,
         total_revenue_weekly
-    FROM {{ ref('test_revenue_gender_weekly') }}
+    FROM test_revenue_gender_weekly
 ),
 
 expected AS (
@@ -13,7 +13,7 @@ expected AS (
         WEEK_NUMBER,
         GENDER,
         total_revenue_weekly
-    FROM {{ ref('expected_revenue_gender_weekly') }}
+    FROM expected_revenue_gender_weekly
 )
 
 SELECT 
